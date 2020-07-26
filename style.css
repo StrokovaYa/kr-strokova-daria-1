@@ -19,7 +19,8 @@
 }
 
 .slider-counter {
-  font-family: "Montserrat Light";
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 300;
   font-size: 60px;
   line-height: 73px;
 
@@ -59,13 +60,14 @@
 
 .slider-block {
   max-width: 307px;
-  margin: 89px 0px 89px 133px;
+  margin: 89px 0 89px 133px;
 }
 
 .slider-title {
   margin: 0;
 
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 40px;
   line-height: 44px;
 
@@ -73,11 +75,11 @@
 }
 
 .slider-text {
-  font-family: "Crimson Text";
+  font-family: "Crimson Text", "Times New Roman", serif;
   font-size: 20px;
   line-height: 25px;
 
-  margin-bottom: 29px;
+  margin-bottom: 20px;
 
   color: #1e0606;
 }
@@ -85,19 +87,19 @@
 .slider-img {
   position: absolute;
   left: 445px;
-  bottom: 0px;
+  bottom: 0;
 }
 
 .slider-text-bottom {
-  margin: 0;
-
-  font-family: "Open Sans Bold";
+  font-weight: 700;
   font-size: 12px;
   line-height: 16px;
-  padding: 11px 0;
 
   text-align: center;
   text-transform: uppercase;
+
+  padding: 11px 0;
+  margin: 0;
 
   color: #ffffff;
   background-color: #c29974;
@@ -114,20 +116,19 @@
 }
 
 .categories-cards {
-  /* height: 560px; */
-
-  margin: 0;
-
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
+
+  margin: 0 -10px;
 }
 
 .categories-list {
   position: relative;
+
   width: 280px;
   height: 270px;
+
+  margin: 0 10px 20px 10px;
 }
 
 .categories-list:nth-child(1) {
@@ -168,7 +169,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 26px;
   line-height: 32px;
   text-align: center;
@@ -176,13 +178,13 @@
 
   color: #ffffff;
 
-  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  text-shadow: 0 0 40px rgba(147, 3, 3, 0.25);
 }
 
 .categories-switch {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .vector {
   width: 37px;
@@ -222,20 +224,21 @@
 }
 
 .delivery-list {
-  margin: 0px;
+  margin: 0;
 }
 
 .delivery-item-button {
-  text-align: start;
-  font-family: "Crimson Text";
+  font-family: "Crimson Text", "Times New Roman", serif;
   font-size: 26px;
   line-height: 32px;
+
+  text-align: start;
 
   width: 326px;
   height: 55px;
   padding-left: 60px;
 
-  padding: 11px 180px 11px 60px;
+  padding: 14px 180px 11px 60px;
 
   border: none;
   color: #1e0606;
@@ -245,12 +248,13 @@
 }
 
 .delivery-item-button.active {
-  font-family: "Crimson Text Bold";
+  font-family: "Crimson Text", "Times New Roman", serif;
+  font-weight: 700;
   background-color: rgba(112, 187, 220, 0.2);
 }
 
 .delivery-text {
-  margin: 0px;
+  margin: 0;
   padding-left: 60px;
 }
 
@@ -278,7 +282,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0px;
+  margin: 0;
 }
 
 /* DLK and Map */
@@ -294,7 +298,7 @@
   max-width: 543px;
   margin-top: 26px;
   margin-right: 57px;
-  padding: 0px 30px 35px 30px;
+  padding: 0 30px 35px 30px;
 
   background-color: #e1f0f7;
 }
@@ -304,16 +308,16 @@
 }
 
 .about {
-  font-family: "Crimson Text";
+  font-family: "Crimson Text", "Times New Roman", serif;
   font-size: 26px;
   line-height: 32px;
 
-  margin: 0px;
+  margin: 0;
   margin-bottom: 10px;
 }
 
 .dlk-text {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 20px;
 }
 

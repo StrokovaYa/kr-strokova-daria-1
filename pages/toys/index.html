@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/normalize.css" />
     <link rel="stylesheet" href="/common.css" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Design Life Kids</title>
+    <title>Design Life Kids - Toys</title>
   </head>
   <body>
     <header class="header container">
@@ -133,11 +133,11 @@
       </section>
       <section class="filters">
         <div class="container">
-          <form class="form-filters" action="/pages/toys/index.html">
-            <fieldset class="form-group">
+          <h2 class="hidden section-title">Filters</h2>
+          <form class="form-filters" action="#">
+            <fieldset class="form-group form-group-cost">
               <legend class="form-group-title">Cost</legend>
-              <label class="form-group-label">
-                <span class="cost-value form-group-label">0</span>
+              <label class="form-group-label cost-label">
                 <input
                   class="form-range"
                   type="range"
@@ -147,125 +147,143 @@
                   value="100"
                   name="cost"
                 />
-                <span class="cost-value form-group-label">500</span>
+                <div class="cost-range">
+                  <span class="cost-value form-group-label">0</span>
+                  <span class="cost-value form-group-label">500</span>
+                </div>
               </label>
             </fieldset>
-            <fieldset class="form-group">
+            <fieldset class="form-group form-group-color">
               <legend class="form-group-title">Color</legend>
               <ul class="form-checkbox-list">
                 <li class="form-checkbox-item">
                   <label class="form-group-label">
                     <input
-                      class="color-input"
+                      class="color-input hidden"
                       type="checkbox"
                       name="color"
                       value="black"
+                      checked
                     />
-                    Black
+                    <span class="color-input-checkbox"></span>
+                    <span class="color-input-text">Black</span>
                   </label>
                 </li>
                 <li class="form-checkbox-item">
                   <label class="form-group-label">
                     <input
-                      class="color-input"
+                      class="color-input hidden"
                       type="checkbox"
                       name="color"
                       value="blue"
                     />
-                    Blue
+                    <span class="color-input-checkbox"></span>
+                    <span class="color-input-text">Blue</span>
                   </label>
                 </li>
                 <li class="form-checkbox-item">
                   <label class="form-group-label">
                     <input
-                      class="color-input"
+                      class="color-input hidden"
                       type="checkbox"
                       name="color"
                       value="green"
                     />
-                    Green
+                    <span class="color-input-checkbox"></span>
+                    <span class="color-input-text">Green</span>
                   </label>
                 </li>
                 <li class="form-checkbox-item">
                   <label class="form-group-label">
                     <input
-                      class="color-input"
+                      class="color-input hidden"
                       type="checkbox"
                       name="color"
                       value="white"
                     />
-                    White
+                    <span class="color-input-checkbox"></span>
+                    <span class="color-input-text">White</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-group">
+            <fieldset class="form-group form-group-delivery">
               <legend class="form-group-title">Delivery</legend>
               <ul class="form-radio-list">
                 <li class="form-radio-item">
                   <label class="form-group-label">
                     <input
-                      class="delivery-input"
+                      class="delivery-input hidden"
                       type="radio"
                       name="shipping"
                       value="free"
                     />
-                    Free Shipping
+                    <span class="delivery-input-checkbox"></span>
+                    <span class="delivery-input-text">Free Shipping</span>
                   </label>
                 </li>
                 <li class="form-radio-item">
                   <label class="form-group-label">
                     <input
-                      class="delivery-input"
+                      class="delivery-input hidden"
                       type="radio"
                       name="shipping"
                       value="fast"
+                      checked
                     />
-                    Fast Shipping
+                    <span class="delivery-input-checkbox"></span>
+                    <span class="delivery-input-text">Fast Shipping</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-group">
+            <fieldset class="form-group form-group-amount">
               <legend class="form-group-title">Amount</legend>
-              <ul class="form-radio-list">
-                <li class="form-radio-item">
-                  <label class="form-group-label">
-                    <input
-                      class="amount-input"
-                      type="radio"
-                      name="amount"
-                      value="0-5"
-                    />0-5
+              <ul class="form-amount-list">
+                <li class="form-amount-item">
+                  <input
+                    class="amount-input hidden"
+                    id="button-1"
+                    type="radio"
+                    name="amount"
+                    value="0-5"
+                    checked
+                  />
+                  <label class="form-group-label amount-label" for="button-1">
+                    0-5
                   </label>
                 </li>
-                <li class="form-radio-item">
-                  <label>
-                    <input
-                      class="amount-input"
-                      type="radio"
-                      name="amount"
-                      value="10-20"
-                    />10-20
+                <li class="form-amount-item">
+                  <input
+                    class="amount-input hidden"
+                    id="button-2"
+                    type="radio"
+                    name="amount"
+                    value="10-20"
+                  />
+                  <label class="form-group-label amount-label" for="button-2">
+                    10-20
                   </label>
                 </li>
-                <li class="form-radio-item">
-                  <label>
-                    <input
-                      class="amount-input"
-                      type="radio"
-                      name="amount"
-                      value="20-50"
-                    />20-50
+                <li class="form-amount-item">
+                  <input
+                    class="amount-input hidden"
+                    id="button-3"
+                    type="radio"
+                    name="amount"
+                    value="20-50"
+                  />
+                  <label class="form-group-label amount-label" for="button-3">
+                    20-50
                   </label>
                 </li>
               </ul>
             </fieldset>
+            <button class="button button-filters" type="submit">APPLY</button>
           </form>
-          <button class="button" type="submit">APPLY</button>
         </div>
       </section>
-      <section class="results">
+      <section class="results container">
         <ul class="results-list">
           <li class="results-item">
             <a class="results-link" href="#">
@@ -276,6 +294,9 @@
                 height="385"
                 alt="SHARKY BEAN BAG CHAIR COVER"
               />
+              <div class="results-hover">
+                <span class="results-hover-text">LEARN MORE</span>
+              </div>
               <h3 class="img-heading">SHARKY BEAN BAG CHAIR COVER</h3>
               <span class="price">$60.00 USD</span>
             </a>
@@ -289,6 +310,9 @@
                 height="385"
                 alt="BRASS DECO FRAMES"
               />
+              <div class="results-hover">
+                <span class="results-hover-text">LEARN MORE</span>
+              </div>
               <h3 class="img-heading">BRASS DECO FRAMES</h3>
               <span class="price">$66.00 USD</span>
             </a>
@@ -302,6 +326,9 @@
                 height="385"
                 alt="CIBO FULL APRON"
               />
+              <div class="results-hover">
+                <span class="results-hover-text">LEARN MORE</span>
+              </div>
               <h3 class="img-heading">CIBO FULL APRON</h3>
               <span class="price">$60.00 USD</span>
             </a>
@@ -315,6 +342,9 @@
                 height="385"
                 alt="GATCHA GATCHA GUMBALL MACHINE"
               />
+              <div class="results-hover">
+                <span class="results-hover-text">LEARN MORE</span>
+              </div>
               <h3 class="img-heading">GATCHA GATCHA GUMBALL MACHINE</h3>
               <span class="price">$56.00 USD</span>
             </a>
@@ -328,6 +358,9 @@
                 height="385"
                 alt="CHRISTMAS ADVENT SCENTED CANDLE"
               />
+              <div class="results-hover">
+                <span class="results-hover-text">LEARN MORE</span>
+              </div>
               <h3 class="img-heading">CHRISTMAS ADVENT SCENTED CANDLE</h3>
               <span class="price">$29.00 USD</span>
             </a>
@@ -341,12 +374,15 @@
                 height="385"
                 alt="TANGLE SPINNING TEA LIGHT"
               />
+              <div class="results-hover">
+                <span class="results-hover-text">LEARN MORE</span>
+              </div>
               <h3 class="img-heading">TANGLE SPINNING TEA LIGHT</h3>
               <span class="price">$56.00 USD</span>
             </a>
           </li>
         </ul>
-        <div class="pages-switch">
+        <div class="pages-switch container">
           <button class="switch">
             <svg
               width="18"
@@ -355,30 +391,19 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                d="M16 2L3 15L16 28"
-                stroke="#1E0606"
-                stroke-opacity="0.12"
-                stroke-width="4"
-              />
+              <path d="M16 2L3 15L16 28" stroke="#E4E1E1" stroke-width="4" />
             </svg>
           </button>
           <ul class="pages-list">
             <li class="page-item">
-              <a class="page-link" href="#">1</a>
+              <a class="page-link active" href="#">1</a>
             </li>
-          </ul>
-          <ul class="pages-list">
             <li class="page-item">
               <a class="page-link" href="#">2</a>
             </li>
-          </ul>
-          <ul class="pages-list">
             <li class="page-item">
               <a class="page-link" href="#">3</a>
             </li>
-          </ul>
-          <ul class="pages-list">
             <li class="page-item">
               <a class="page-link" href="#">4</a>
             </li>
@@ -391,201 +416,248 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                d="M2 2L15 15L2 28"
-                stroke="#1E0606"
-                stroke-opacity="0.12"
-                stroke-width="4"
-              />
+              <path d="M2 2L15 15L2 28" stroke="#E4E1E1" stroke-width="4" />
             </svg>
           </button>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <section class="footer-nav">
-        <h3 class="footer-title">Navigation</h3>
-        <ul class="footer-list">
-          <li><a class="footer-link" href="#">About Us</a></li>
-          <li><a class="footer-link" href="#">Blog</a></li>
-          <li><a class="footer-link" href="#">Design Services</a></li>
-          <li><a class="footer-link" href="#">Featured On</a></li>
-          <li><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
-          <li><a class="footer-link" href="#">Shop By Designer</a></li>
-        </ul>
-      </section>
-      <section class="footer-customer">
-        <h3 class="footer-title">Customer Information</h3>
-        <ul class="footer-list">
-          <li>
-            <a class="footer-link" href="#">Contact Us</a>
-          </li>
-          <li>
-            <a class="footer-link" href="#">Sale Exclusions</a>
-          </li>
-          <li>
-            <a class="footer-link" href="#">Shipping & Returns</a>
-          </li>
-          <li>
-            <a class="footer-link" href="#">Terms & Conditions</a>
-          </li>
-          <li>
-            <a class="footer-link" href="#">Privacy Policy</a>
-          </li>
-          <li>
-            <a class="footer-link" href="#">Search</a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-connect">
-        <h3 class="footer-title">Connect</h3>
-        <form class="join-form">
-          <input type="text" placeholder="Email" />
-          <button type="submit">JOIN</button>
-        </form>
-        <ul class="footer-socials">
-          <li class="footer-socials-link">
-            <svg
-              width="9"
-              height="16"
-              viewBox="0 0 9 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M8.55271 3.36723H6.29671C6.03071 3.36723 5.73372 3.71723 5.73372 4.18523V5.81423H8.55271V8.13523H5.73372V15.1052H3.07071V8.13523H0.657715V5.81423H3.07071V4.44723C3.07071 2.48823 4.43171 0.894226 6.29671 0.894226H8.55271V3.36723Z"
-                fill="black"
+      <div class="container">
+        <div class="footer-block">
+          <section class="footer-nav nav-block">
+            <h3 class="footer-title section-text">Navigation</h3>
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <a class="footer-link section-text" href="#">About Us</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-link section-text" href="#">Blog</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-link section-text" href="#">Design Services</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-link section-text" href="#">Featured On</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-link section-text" href="#"
+                  >2018 Holiday Catalog</a
+                >
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-link section-text" href="#"
+                  >Shop By Designer</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="footer-customer nav-block">
+            <h3 class="footer-title section-text">Customer Information</h3>
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <a class="footer-link section-text" href="#">Contact Us</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-link section-text" href="#">Sale Exclusions</a>
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-link section-text" href="#"
+                  >Shipping & Returns</a
+                >
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-link section-text" href="#"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-link section-text" href="#">Privacy Policy</a>
+              </li>
+              <li><a class="footer-link section-text" href="#">Search</a></li>
+            </ul>
+          </section>
+          <section class="footer-connect nav-block">
+            <h3 class="footer-title section-text">Connect</h3>
+            <form class="join-form">
+              <input
+                class="join-form-input section-text"
+                type="text"
+                name="email"
+                placeholder="Email"
               />
-            </svg>
-          </li>
-          <li class="footer-socials-link">
-            <svg
-              width="15"
-              height="13"
-              viewBox="0 0 15 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M13.1006 3.28912C13.1056 3.41612 13.1096 3.54312 13.1096 3.67212C13.1096 7.57612 10.1366 12.0781 4.70258 12.0781C3.03458 12.0781 1.48058 11.5881 0.173584 10.7501C0.406584 10.7771 0.641584 10.7911 0.879584 10.7911C2.26358 10.7911 3.53758 10.3181 4.54858 9.52512C3.25558 9.50212 2.16558 8.64812 1.78758 7.47512C1.96858 7.51012 2.15458 7.52712 2.34458 7.52712C2.61358 7.52712 2.87458 7.49212 3.12258 7.42412C1.77158 7.15212 0.751584 5.95912 0.751584 4.52712V4.49012C1.15058 4.71112 1.60758 4.84412 2.09158 4.85912C1.29858 4.33012 0.777584 3.42612 0.777584 2.40012C0.777584 1.85912 0.922584 1.35212 1.17658 0.916122C2.63258 2.70312 4.81058 3.87912 7.26558 4.00212C7.21558 3.78512 7.19058 3.56012 7.19058 3.32812C7.19058 1.69712 8.51258 0.375122 10.1446 0.375122C10.9936 0.375122 11.7616 0.732122 12.2996 1.30712C12.9736 1.17612 13.6056 0.930122 14.1766 0.590122C13.9556 1.28112 13.4886 1.85912 12.8766 2.22512C13.4746 2.15412 14.0446 1.99612 14.5756 1.76012C14.1776 2.35212 13.6776 2.87312 13.1006 3.28912Z"
-                fill="black"
-              />
-            </svg>
-          </li>
-          <li class="footer-socials-link">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M8.00047 0C3.58252 0 0 3.58158 0 8.00047C0 11.2754 1.97001 14.0902 4.78956 15.3273C4.76698 14.7694 4.78579 14.0977 4.92785 13.49C5.08214 12.8408 5.95708 9.1313 5.95708 9.1313C5.95708 9.1313 5.70212 8.62045 5.70212 7.865C5.70212 6.6796 6.38984 5.79432 7.24502 5.79432C7.97225 5.79432 8.3241 6.34092 8.3241 6.99571C8.3241 7.7267 7.85747 8.82084 7.61757 9.83407C7.41718 10.6836 8.04281 11.3751 8.88011 11.3751C10.3957 11.3751 11.4165 9.42859 11.4165 7.12177C11.4165 5.36908 10.2358 4.05668 8.08796 4.05668C5.66167 4.05668 4.14982 5.86582 4.14982 7.88663C4.14982 8.5847 4.35491 9.07579 4.67666 9.45587C4.82531 9.6318 4.84506 9.70142 4.79144 9.90275C4.75381 10.0486 4.66537 10.4042 4.62868 10.5444C4.57506 10.7466 4.41136 10.82 4.22885 10.7448C3.11025 10.2885 2.58999 9.0645 2.58999 7.68813C2.58999 5.41612 4.50638 2.68972 8.30717 2.68972C11.3619 2.68972 13.3724 4.90151 13.3724 7.27324C13.3724 10.4117 11.6282 12.7562 9.05509 12.7562C8.19239 12.7562 7.37955 12.2895 7.10108 11.7599C7.10108 11.7599 6.63633 13.6029 6.53848 13.9585C6.36914 14.5747 6.03704 15.1919 5.73317 15.6717C6.45287 15.8843 7.21303 16 8.00047 16C12.4184 16 16 12.4184 16 8.00047C16 3.58158 12.4184 0 8.00047 0Z"
-                fill="black"
-              />
-            </svg>
-          </li>
-          <li class="footer-socials-link">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M8.00003 0C5.82733 0 5.5549 0.0092 4.70163 0.0481333C3.8501 0.0869667 3.26857 0.222233 2.7597 0.42C2.23363 0.624433 1.7875 0.897967 1.3427 1.3427C0.897967 1.7875 0.624433 2.23363 0.42 2.7597C0.222233 3.26857 0.0869667 3.8501 0.0481333 4.7016C0.0092 5.5549 0 5.82733 0 8C0 10.1727 0.0092 10.4451 0.0481333 11.2984C0.0869667 12.1499 0.222233 12.7314 0.42 13.2403C0.624433 13.7664 0.897967 14.2125 1.3427 14.6573C1.7875 15.102 2.23363 15.3756 2.7597 15.58C3.26857 15.7778 3.8501 15.913 4.70163 15.9519C5.5549 15.9908 5.82733 16 8.00003 16C10.1727 16 10.4451 15.9908 11.2984 15.9519C12.1499 15.913 12.7314 15.7778 13.2403 15.58C13.7664 15.3756 14.2125 15.102 14.6573 14.6573C15.102 14.2125 15.3756 13.7664 15.58 13.2403C15.7778 12.7314 15.913 12.1499 15.9519 11.2984C15.9908 10.4451 16 10.1727 16 8C16 5.82733 15.9908 5.5549 15.9519 4.7016C15.913 3.8501 15.7778 3.26857 15.58 2.7597C15.3756 2.23363 15.102 1.7875 14.6573 1.3427C14.2125 0.897967 13.7664 0.624433 13.2403 0.42C12.7314 0.222233 12.1499 0.0869667 11.2984 0.0481333C10.4451 0.0092 10.1727 0 8.00003 0ZM8.00003 1.44143C10.1361 1.44143 10.3891 1.4496 11.2327 1.4881C12.0127 1.52367 12.4363 1.65397 12.7182 1.76353C13.0916 1.90867 13.3581 2.08203 13.638 2.362C13.918 2.6419 14.0913 2.9084 14.2365 3.28183C14.346 3.56373 14.4763 3.98733 14.5119 4.7673C14.5504 5.61087 14.5586 5.8639 14.5586 8C14.5586 10.1361 14.5504 10.3891 14.5119 11.2327C14.4763 12.0127 14.346 12.4363 14.2365 12.7182C14.0913 13.0916 13.918 13.3581 13.638 13.638C13.3581 13.918 13.0916 14.0913 12.7182 14.2365C12.4363 14.346 12.0127 14.4763 11.2327 14.5119C10.3892 14.5504 10.1363 14.5586 8.00003 14.5586C5.86373 14.5586 5.61077 14.5504 4.7673 14.5119C3.98733 14.4763 3.56373 14.346 3.28183 14.2365C2.9084 14.0913 2.64193 13.918 2.36197 13.638C2.08207 13.3581 1.90867 13.0916 1.76353 12.7182C1.65397 12.4363 1.52367 12.0127 1.4881 11.2327C1.4496 10.3891 1.44143 10.1361 1.44143 8C1.44143 5.8639 1.4496 5.61087 1.4881 4.7673C1.52367 3.98733 1.65397 3.56373 1.76353 3.28183C1.90867 2.9084 2.08203 2.6419 2.36197 2.362C2.64193 2.08203 2.9084 1.90867 3.28183 1.76353C3.56373 1.65397 3.98733 1.52367 4.7673 1.4881C5.61087 1.4496 5.8639 1.44143 8.00003 1.44143ZM3.8919 8C3.8919 5.73113 5.73113 3.8919 8.00003 3.8919C10.2689 3.8919 12.1081 5.73113 12.1081 8C12.1081 10.2689 10.2689 12.1081 8.00003 12.1081C5.73113 12.1081 3.8919 10.2689 3.8919 8ZM8.00003 10.6667C6.52723 10.6667 5.33333 9.47277 5.33333 8C5.33333 6.52723 6.52723 5.33333 8.00003 5.33333C9.47277 5.33333 10.6667 6.52723 10.6667 8C10.6667 9.47277 9.47277 10.6667 8.00003 10.6667ZM12.2704 4.68957C12.8006 4.68957 13.2304 4.2598 13.2304 3.7296C13.2304 3.1994 12.8006 2.76957 12.2704 2.76957C11.7402 2.76957 11.3104 3.1994 11.3104 3.7296C11.3104 4.2598 11.7402 4.68957 12.2704 4.68957Z"
-                fill="black"
-              />
-            </svg>
-          </li>
-        </ul>
-      </section>
-      <div class="footer-credits">
-        <p class="rating">Company Rating</p>
-        <ul class="stars">
-          <li class="star-img">
-            <svg
-              width="14"
-              height="13"
-              viewBox="0 0 14 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                fill="black"
-              />
-            </svg>
-          </li>
-          <li class="star-img">
-            <svg
-              width="14"
-              height="13"
-              viewBox="0 0 14 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                fill="black"
-              />
-            </svg>
-          </li>
-          <li class="star-img">
-            <svg
-              width="14"
-              height="13"
-              viewBox="0 0 14 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                fill="black"
-              />
-            </svg>
-          </li>
-          <li class="star-img">
-            <svg
-              width="14"
-              height="13"
-              viewBox="0 0 14 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                fill="black"
-              />
-            </svg>
-          </li>
-          <li class="star-img">
-            <svg
-              width="14"
-              height="13"
-              viewBox="0 0 14 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                fill="black"
-              />
-            </svg>
-          </li>
-        </ul>
-        <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-        <p class="design">Web Design — Direct Line Development</p>
+              <button class="join-form-button button" type="submit">
+                JOIN
+              </button>
+            </form>
+            <ul class="footer-socials">
+              <li class="socials-item">
+                <a class="socials-link" href="#">
+                  <svg
+                    class="socials-pin"
+                    width="9"
+                    height="16"
+                    viewBox="0 0 9 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.55271 3.36723H6.29671C6.03071 3.36723 5.73372 3.71723 5.73372 4.18523V5.81423H8.55271V8.13523H5.73372V15.1052H3.07071V8.13523H0.657715V5.81423H3.07071V4.44723C3.07071 2.48823 4.43171 0.894226 6.29671 0.894226H8.55271V3.36723Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a href="#" class="socials-link">
+                  <svg
+                    class="socials-pin"
+                    width="15"
+                    height="13"
+                    viewBox="0 0 15 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.1006 3.28912C13.1056 3.41612 13.1096 3.54312 13.1096 3.67212C13.1096 7.57612 10.1366 12.0781 4.70258 12.0781C3.03458 12.0781 1.48058 11.5881 0.173584 10.7501C0.406584 10.7771 0.641584 10.7911 0.879584 10.7911C2.26358 10.7911 3.53758 10.3181 4.54858 9.52512C3.25558 9.50212 2.16558 8.64812 1.78758 7.47512C1.96858 7.51012 2.15458 7.52712 2.34458 7.52712C2.61358 7.52712 2.87458 7.49212 3.12258 7.42412C1.77158 7.15212 0.751584 5.95912 0.751584 4.52712V4.49012C1.15058 4.71112 1.60758 4.84412 2.09158 4.85912C1.29858 4.33012 0.777584 3.42612 0.777584 2.40012C0.777584 1.85912 0.922584 1.35212 1.17658 0.916122C2.63258 2.70312 4.81058 3.87912 7.26558 4.00212C7.21558 3.78512 7.19058 3.56012 7.19058 3.32812C7.19058 1.69712 8.51258 0.375122 10.1446 0.375122C10.9936 0.375122 11.7616 0.732122 12.2996 1.30712C12.9736 1.17612 13.6056 0.930122 14.1766 0.590122C13.9556 1.28112 13.4886 1.85912 12.8766 2.22512C13.4746 2.15412 14.0446 1.99612 14.5756 1.76012C14.1776 2.35212 13.6776 2.87312 13.1006 3.28912Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a href="#" class="socials-link">
+                  <svg
+                    class="socials-pin"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.00047 0C3.58252 0 0 3.58158 0 8.00047C0 11.2754 1.97001 14.0902 4.78956 15.3273C4.76698 14.7694 4.78579 14.0977 4.92785 13.49C5.08214 12.8408 5.95708 9.1313 5.95708 9.1313C5.95708 9.1313 5.70212 8.62045 5.70212 7.865C5.70212 6.6796 6.38984 5.79432 7.24502 5.79432C7.97225 5.79432 8.3241 6.34092 8.3241 6.99571C8.3241 7.7267 7.85747 8.82084 7.61757 9.83407C7.41718 10.6836 8.04281 11.3751 8.88011 11.3751C10.3957 11.3751 11.4165 9.42859 11.4165 7.12177C11.4165 5.36908 10.2358 4.05668 8.08796 4.05668C5.66167 4.05668 4.14982 5.86582 4.14982 7.88663C4.14982 8.5847 4.35491 9.07579 4.67666 9.45587C4.82531 9.6318 4.84506 9.70142 4.79144 9.90275C4.75381 10.0486 4.66537 10.4042 4.62868 10.5444C4.57506 10.7466 4.41136 10.82 4.22885 10.7448C3.11025 10.2885 2.58999 9.0645 2.58999 7.68813C2.58999 5.41612 4.50638 2.68972 8.30717 2.68972C11.3619 2.68972 13.3724 4.90151 13.3724 7.27324C13.3724 10.4117 11.6282 12.7562 9.05509 12.7562C8.19239 12.7562 7.37955 12.2895 7.10108 11.7599C7.10108 11.7599 6.63633 13.6029 6.53848 13.9585C6.36914 14.5747 6.03704 15.1919 5.73317 15.6717C6.45287 15.8843 7.21303 16 8.00047 16C12.4184 16 16 12.4184 16 8.00047C16 3.58158 12.4184 0 8.00047 0Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a href="#" class="socials-link">
+                  <svg
+                    class="socials-pin"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.00003 0C5.82733 0 5.5549 0.0092 4.70163 0.0481333C3.8501 0.0869667 3.26857 0.222233 2.7597 0.42C2.23363 0.624433 1.7875 0.897967 1.3427 1.3427C0.897967 1.7875 0.624433 2.23363 0.42 2.7597C0.222233 3.26857 0.0869667 3.8501 0.0481333 4.7016C0.0092 5.5549 0 5.82733 0 8C0 10.1727 0.0092 10.4451 0.0481333 11.2984C0.0869667 12.1499 0.222233 12.7314 0.42 13.2403C0.624433 13.7664 0.897967 14.2125 1.3427 14.6573C1.7875 15.102 2.23363 15.3756 2.7597 15.58C3.26857 15.7778 3.8501 15.913 4.70163 15.9519C5.5549 15.9908 5.82733 16 8.00003 16C10.1727 16 10.4451 15.9908 11.2984 15.9519C12.1499 15.913 12.7314 15.7778 13.2403 15.58C13.7664 15.3756 14.2125 15.102 14.6573 14.6573C15.102 14.2125 15.3756 13.7664 15.58 13.2403C15.7778 12.7314 15.913 12.1499 15.9519 11.2984C15.9908 10.4451 16 10.1727 16 8C16 5.82733 15.9908 5.5549 15.9519 4.7016C15.913 3.8501 15.7778 3.26857 15.58 2.7597C15.3756 2.23363 15.102 1.7875 14.6573 1.3427C14.2125 0.897967 13.7664 0.624433 13.2403 0.42C12.7314 0.222233 12.1499 0.0869667 11.2984 0.0481333C10.4451 0.0092 10.1727 0 8.00003 0ZM8.00003 1.44143C10.1361 1.44143 10.3891 1.4496 11.2327 1.4881C12.0127 1.52367 12.4363 1.65397 12.7182 1.76353C13.0916 1.90867 13.3581 2.08203 13.638 2.362C13.918 2.6419 14.0913 2.9084 14.2365 3.28183C14.346 3.56373 14.4763 3.98733 14.5119 4.7673C14.5504 5.61087 14.5586 5.8639 14.5586 8C14.5586 10.1361 14.5504 10.3891 14.5119 11.2327C14.4763 12.0127 14.346 12.4363 14.2365 12.7182C14.0913 13.0916 13.918 13.3581 13.638 13.638C13.3581 13.918 13.0916 14.0913 12.7182 14.2365C12.4363 14.346 12.0127 14.4763 11.2327 14.5119C10.3892 14.5504 10.1363 14.5586 8.00003 14.5586C5.86373 14.5586 5.61077 14.5504 4.7673 14.5119C3.98733 14.4763 3.56373 14.346 3.28183 14.2365C2.9084 14.0913 2.64193 13.918 2.36197 13.638C2.08207 13.3581 1.90867 13.0916 1.76353 12.7182C1.65397 12.4363 1.52367 12.0127 1.4881 11.2327C1.4496 10.3891 1.44143 10.1361 1.44143 8C1.44143 5.8639 1.4496 5.61087 1.4881 4.7673C1.52367 3.98733 1.65397 3.56373 1.76353 3.28183C1.90867 2.9084 2.08203 2.6419 2.36197 2.362C2.64193 2.08203 2.9084 1.90867 3.28183 1.76353C3.56373 1.65397 3.98733 1.52367 4.7673 1.4881C5.61087 1.4496 5.8639 1.44143 8.00003 1.44143ZM3.8919 8C3.8919 5.73113 5.73113 3.8919 8.00003 3.8919C10.2689 3.8919 12.1081 5.73113 12.1081 8C12.1081 10.2689 10.2689 12.1081 8.00003 12.1081C5.73113 12.1081 3.8919 10.2689 3.8919 8ZM8.00003 10.6667C6.52723 10.6667 5.33333 9.47277 5.33333 8C5.33333 6.52723 6.52723 5.33333 8.00003 5.33333C9.47277 5.33333 10.6667 6.52723 10.6667 8C10.6667 9.47277 9.47277 10.6667 8.00003 10.6667ZM12.2704 4.68957C12.8006 4.68957 13.2304 4.2598 13.2304 3.7296C13.2304 3.1994 12.8006 2.76957 12.2704 2.76957C11.7402 2.76957 11.3104 3.1994 11.3104 3.7296C11.3104 4.2598 11.7402 4.68957 12.2704 4.68957Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="footer-credits">
+          <div class="rating">
+            <p class="rating-text section-text">Company Rating</p>
+            <ul class="stars">
+              <li class="stars-item">
+                <svg
+                  class="star-img"
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                    fill="white"
+                  />
+                </svg>
+              </li>
+              <li class="stars-item">
+                <svg
+                  class="star-img"
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                    fill="white"
+                  />
+                </svg>
+              </li>
+              <li class="stars-item">
+                <svg
+                  class="star-img"
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                    fill="white"
+                  />
+                </svg>
+              </li>
+              <li class="stars-item">
+                <svg
+                  class="star-img"
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                    fill="white"
+                  />
+                </svg>
+              </li>
+              <li class="stars-item">
+                <svg
+                  class="star-img"
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                    fill="white"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <p class="copyright-text section-text">
+            Copyright © 2018 Dlk • Design Life Kids
+          </p>
+          <a class="design-text section-text" href="#">
+            Web Design — Direct Line Development
+          </a>
+        </div>
       </div>
     </footer>
   </body>

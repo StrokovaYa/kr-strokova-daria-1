@@ -1,0 +1,33 @@
+/* Contact Us Form */
+
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 60px;
+}
+
+.contact-us-info {
+  width: 380px;
+}
+
+.contact-us-text {
+  font-size: 16px;
+  line-height: 22px;
+
+  margin-bottom: 20px;
+
+  color: #1e0606;
+}
+
+.contact-us-help {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  text-transform: uppercase;
+
+  margin: 0;
+
+  color: #c29974;
+}

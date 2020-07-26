@@ -38,10 +38,12 @@
       <nav class="header-nav">
         <ul class="header-list">
           <li class="header-item">
-            <a class="header-nav-link" href="#">Blog</a>
+            <a class="header-nav-link" href="/pages/blog/index.html">Blog</a>
           </li>
           <li class="header-item">
-            <a class="header-nav-link" href="#">Catalog</a>
+            <a class="header-nav-link" href="/pages/catalog/index.html"
+              >Catalog</a
+            >
           </li>
           <li class="header-item">
             <a class="header-nav-link" href="#">About Us</a>
@@ -105,7 +107,7 @@
           <div class="slider-block">
             <h1 class="slider-title">THE OOH NOO COLLECTION</h1>
             <p class="slider-text">Designed in Slovenia</p>
-            <a class="button" href="/pages/catalog/index.html">Explore now</a>
+            <button class="button button-open_js">Explore now</button>
           </div>
           <img
             class="slider-img"
@@ -437,7 +439,7 @@
           </section>
         </div>
         <div class="footer-credits">
-          <div class="rating">
+          <div class="company-rating">
             <p class="rating-text section-text">Company Rating</p>
             <ul class="stars">
               <li class="stars-item">
@@ -526,37 +528,75 @@
         </div>
       </div>
     </footer>
-    <form action="/" class="modal-window">
-      <label class="form-label">
-        Name
-        <input class="input-text" type="text" name="name" />
-      </label>
-      <label class="form-label">
-        Phone
-        <input class="input-text" type="tel" name="phone" />
-      </label>
-      <label class="form-label">
-        Email
-        <input class="input-text" type="email" name="email" />
-      </label>
-      <label class="input-text"
-        >Message
-        <textarea name="message" cols="30" rows="10"></textarea>
-      </label>
-      <fieldset>
+    <div class="modal-bg modal_js">
+      <form class="contact-us-form modal-window" action="/">
+        <div class="form-row">
+          <div class="form-cell-100">
+            <label class="form-label">
+              <span class="form-label-title">Name</span>
+              <input
+                class="input-text input-text_js"
+                type="text"
+                name="name"
+                placeholder="Ivan Ivanov"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-cell-50">
+            <label class="form-label">
+              <span class="form-label-title">Phone</span>
+              <input class="input-text" type="tel" name="phone" />
+            </label>
+          </div>
+          <div class="form-cell-50">
+            <label class="form-label">
+              <span class="form-label-title">Email</span>
+              <input class="input-text" type="email" name="email" />
+            </label>
+          </div>
+        </div>
+        <label class="form-label">
+          <span class="form-label-title">Message</span>
+          <textarea class="input-text input-message" name="message"></textarea>
+        </label>
         <label class="form-label">
           <input
-            class="input-checkbox"
+            class="consent-input hidden"
             type="checkbox"
             name="consent"
             value="yes"
           />
-          By clicking on the button, you consent to the processing of your
-          personal data
+          <span class="consent-input-checkbox"></span>
+          <span class="consent-input-text"
+            >By clicking on the button, you consent to the processing of your
+            personal data</span
+          >
         </label>
-      </fieldset>
-      <button class="button" type="submit">SUBMIT</button>
-      <button class="button-close" type="button">Close</button>
-    </form>
+        <button class="button button-form" type="submit" disabled>
+          SUBMIT
+        </button>
+        <button
+          class="button-close button-close_js"
+          type="button"
+          aria-label="Close"
+        >
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>

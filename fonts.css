@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans Bold";
+  font-family: "Open Sans";
 
   src: url("./fonts/OpenSans-Bold.woff") format("woff"),
     url("./fonts/OpenSans-Bold.woff2") format("woff2");
@@ -17,16 +17,16 @@
 }
 
 @font-face {
-  font-family: "Montserrat Light";
+  font-family: "Montserrat";
 
   src: url("./fonts/Montserrat-Light.woff") format("woff"),
-    url("./fonts/Montserrat-Light.woff2") format("woff2");
+    url("./fonts/Mntserrat-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat SemiBold";
+  font-family: "Montserrat";
 
   src: url("./fonts/Montserrat-SemiBold.woff") format("woff"),
     url("./fonts/Montserrat-SemiBold.woff2") format("woff2");
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat";
 
   src: url("./fonts/Montserrat-Bold.woff") format("woff"),
     url("./fonts/Montserrat-Bold.woff2") format("woff2");
@@ -53,7 +53,7 @@
 }
 
 @font-face {
-  font-family: "Crimson Text Bold";
+  font-family: "Crimson Text";
 
   src: url("./fonts/CrimsonText-BoldItalic.woff") format("woff"),
     url("./fonts/CrimsonText-BoldItalic.woff2") format("woff2");

@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/fonts.css" />
-    <link rel="stylesheet" href="/normalize.css" />
-    <link rel="stylesheet" href="/common.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/css/fonts.min.css" />
+    <link rel="stylesheet" href="/css/normalize.min.css" />
+    <link rel="stylesheet" href="/css/common.min.css" />
+    <link rel="stylesheet" href="./style.min.css" />
     <title>Design Life Kids - Toys</title>
   </head>
   <body>
@@ -38,10 +38,12 @@
       <nav class="header-nav">
         <ul class="header-list">
           <li class="header-item">
-            <a class="header-nav-link" href="#">Blog</a>
+            <a class="header-nav-link" href="/pages/blog/index.html">Blog</a>
           </li>
           <li class="header-item">
-            <a class="header-nav-link" href="#">Catalog</a>
+            <a class="header-nav-link" href="/pages/catalog/index.html"
+              >Catalog</a
+            >
           </li>
           <li class="header-item">
             <a class="header-nav-link" href="#">About Us</a>
@@ -83,204 +85,206 @@
       </div>
     </header>
     <main>
-      <section class="title-breadcrumbs container">
-        <h1 class="toys-title page-title">TOY FOR KIDS</h1>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">Home</a>
-              <span class="breadcrumbs-delimiter">
-                <svg
-                  width="8"
-                  height="12"
-                  viewBox="0 0 8 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+      <section class="toys">
+        <div class="toys-title-breadcrumbs container">
+          <h1 class="toys-title page-title">TOY FOR KIDS</h1>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="/index.html">Home</a>
+                <span class="breadcrumbs-delimiter">
+                  <svg
+                    width="8"
+                    height="12"
+                    viewBox="0 0 8 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z"
+                      fill="#1E0606"
+                    />
+                  </svg>
+                </span>
+              </li>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="/pages/catalog/index.html"
+                  >Catalog</a
                 >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z"
-                    fill="#1E0606"
-                  />
-                </svg>
-              </span>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="/pages/catalog/index.html"
-                >Catalog</a
-              >
-              <span class="breadcrumbs-delimiter">
-                <svg
-                  width="8"
-                  height="12"
-                  viewBox="0 0 8 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z"
-                    fill="#1E0606"
-                  />
-                </svg>
-              </span>
-            </li>
-            <li class="breadcrumbs-active">Toys</li>
-          </ul>
+                <span class="breadcrumbs-delimiter">
+                  <svg
+                    width="8"
+                    height="12"
+                    viewBox="0 0 8 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z"
+                      fill="#1E0606"
+                    />
+                  </svg>
+                </span>
+              </li>
+              <li class="breadcrumbs-active">Toys</li>
+            </ul>
+          </div>
         </div>
-      </section>
-      <section class="filters">
-        <div class="container">
-          <h2 class="hidden section-title">Filters</h2>
-          <form class="form-filters" action="#">
-            <fieldset class="form-group form-group-cost">
-              <legend class="form-group-title">Cost</legend>
-              <label class="form-group-label cost-label">
-                <input
-                  class="form-range"
-                  type="range"
-                  min="0"
-                  max="500"
-                  step="1"
-                  value="100"
-                  name="cost"
-                />
-                <div class="cost-range">
-                  <span class="cost-value form-group-label">0</span>
-                  <span class="cost-value form-group-label">500</span>
-                </div>
-              </label>
-            </fieldset>
-            <fieldset class="form-group form-group-color">
-              <legend class="form-group-title">Color</legend>
-              <ul class="form-checkbox-list">
-                <li class="form-checkbox-item">
-                  <label class="form-group-label">
+        <div class="filters">
+          <div class="container">
+            <h2 class="hidden section-title">Filters</h2>
+            <form class="form-filters" action="#">
+              <fieldset class="form-group form-group-cost">
+                <legend class="form-group-title">Cost</legend>
+                <label class="form-group-label cost-label">
+                  <input
+                    class="form-range"
+                    type="range"
+                    min="0"
+                    max="500"
+                    step="1"
+                    value="100"
+                    name="cost"
+                  />
+                  <span class="cost-range">
+                    <span class="cost-value form-group-label">0</span>
+                    <span class="cost-value form-group-label">500</span>
+                  </span>
+                </label>
+              </fieldset>
+              <fieldset class="form-group form-group-color">
+                <legend class="form-group-title">Color</legend>
+                <ul class="form-checkbox-list">
+                  <li class="form-checkbox-item">
+                    <label class="form-group-label">
+                      <input
+                        class="color-input hidden"
+                        type="checkbox"
+                        name="color"
+                        value="black"
+                        checked
+                      />
+                      <span class="color-input-checkbox"></span>
+                      <span class="color-input-text">Black</span>
+                    </label>
+                  </li>
+                  <li class="form-checkbox-item">
+                    <label class="form-group-label">
+                      <input
+                        class="color-input hidden"
+                        type="checkbox"
+                        name="color"
+                        value="blue"
+                      />
+                      <span class="color-input-checkbox"></span>
+                      <span class="color-input-text">Blue</span>
+                    </label>
+                  </li>
+                  <li class="form-checkbox-item">
+                    <label class="form-group-label">
+                      <input
+                        class="color-input hidden"
+                        type="checkbox"
+                        name="color"
+                        value="green"
+                      />
+                      <span class="color-input-checkbox"></span>
+                      <span class="color-input-text">Green</span>
+                    </label>
+                  </li>
+                  <li class="form-checkbox-item">
+                    <label class="form-group-label">
+                      <input
+                        class="color-input hidden"
+                        type="checkbox"
+                        name="color"
+                        value="white"
+                      />
+                      <span class="color-input-checkbox"></span>
+                      <span class="color-input-text">White</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form-group form-group-delivery">
+                <legend class="form-group-title">Delivery</legend>
+                <ul class="form-radio-list">
+                  <li class="form-radio-item">
+                    <label class="form-group-label">
+                      <input
+                        class="delivery-input hidden"
+                        type="radio"
+                        name="shipping"
+                        value="free"
+                      />
+                      <span class="delivery-input-checkbox"></span>
+                      <span class="delivery-input-text">Free shipping</span>
+                    </label>
+                  </li>
+                  <li class="form-radio-item">
+                    <label class="form-group-label">
+                      <input
+                        class="delivery-input hidden"
+                        type="radio"
+                        name="shipping"
+                        value="fast"
+                        checked
+                      />
+                      <span class="delivery-input-checkbox"></span>
+                      <span class="delivery-input-text">Fast shipping</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form-group form-group-amount">
+                <legend class="form-group-title">Amount</legend>
+                <ul class="form-amount-list">
+                  <li class="form-amount-item">
                     <input
-                      class="color-input hidden"
-                      type="checkbox"
-                      name="color"
-                      value="black"
+                      class="amount-input hidden"
+                      id="button-1"
+                      type="radio"
+                      name="amount"
+                      value="0-5"
                       checked
                     />
-                    <span class="color-input-checkbox"></span>
-                    <span class="color-input-text">Black</span>
-                  </label>
-                </li>
-                <li class="form-checkbox-item">
-                  <label class="form-group-label">
+                    <label class="form-group-label amount-label" for="button-1">
+                      0-5
+                    </label>
+                  </li>
+                  <li class="form-amount-item">
                     <input
-                      class="color-input hidden"
-                      type="checkbox"
-                      name="color"
-                      value="blue"
-                    />
-                    <span class="color-input-checkbox"></span>
-                    <span class="color-input-text">Blue</span>
-                  </label>
-                </li>
-                <li class="form-checkbox-item">
-                  <label class="form-group-label">
-                    <input
-                      class="color-input hidden"
-                      type="checkbox"
-                      name="color"
-                      value="green"
-                    />
-                    <span class="color-input-checkbox"></span>
-                    <span class="color-input-text">Green</span>
-                  </label>
-                </li>
-                <li class="form-checkbox-item">
-                  <label class="form-group-label">
-                    <input
-                      class="color-input hidden"
-                      type="checkbox"
-                      name="color"
-                      value="white"
-                    />
-                    <span class="color-input-checkbox"></span>
-                    <span class="color-input-text">White</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form-group form-group-delivery">
-              <legend class="form-group-title">Delivery</legend>
-              <ul class="form-radio-list">
-                <li class="form-radio-item">
-                  <label class="form-group-label">
-                    <input
-                      class="delivery-input hidden"
+                      class="amount-input hidden"
+                      id="button-2"
                       type="radio"
-                      name="shipping"
-                      value="free"
+                      name="amount"
+                      value="10-20"
                     />
-                    <span class="delivery-input-checkbox"></span>
-                    <span class="delivery-input-text">Free Shipping</span>
-                  </label>
-                </li>
-                <li class="form-radio-item">
-                  <label class="form-group-label">
+                    <label class="form-group-label amount-label" for="button-2">
+                      10-20
+                    </label>
+                  </li>
+                  <li class="form-amount-item">
                     <input
-                      class="delivery-input hidden"
+                      class="amount-input hidden"
+                      id="button-3"
                       type="radio"
-                      name="shipping"
-                      value="fast"
-                      checked
+                      name="amount"
+                      value="20-50"
                     />
-                    <span class="delivery-input-checkbox"></span>
-                    <span class="delivery-input-text">Fast Shipping</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form-group form-group-amount">
-              <legend class="form-group-title">Amount</legend>
-              <ul class="form-amount-list">
-                <li class="form-amount-item">
-                  <input
-                    class="amount-input hidden"
-                    id="button-1"
-                    type="radio"
-                    name="amount"
-                    value="0-5"
-                    checked
-                  />
-                  <label class="form-group-label amount-label" for="button-1">
-                    0-5
-                  </label>
-                </li>
-                <li class="form-amount-item">
-                  <input
-                    class="amount-input hidden"
-                    id="button-2"
-                    type="radio"
-                    name="amount"
-                    value="10-20"
-                  />
-                  <label class="form-group-label amount-label" for="button-2">
-                    10-20
-                  </label>
-                </li>
-                <li class="form-amount-item">
-                  <input
-                    class="amount-input hidden"
-                    id="button-3"
-                    type="radio"
-                    name="amount"
-                    value="20-50"
-                  />
-                  <label class="form-group-label amount-label" for="button-3">
-                    20-50
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button button-filters" type="submit">APPLY</button>
-          </form>
+                    <label class="form-group-label amount-label" for="button-3">
+                      20-50
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="button button-filters" type="submit">APPLY</button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="results container">
@@ -432,7 +436,11 @@
                 <a class="footer-link section-text" href="#">About Us</a>
               </li>
               <li class="footer-list-item">
-                <a class="footer-link section-text" href="#">Blog</a>
+                <a
+                  class="footer-link section-text"
+                  href="/pages/blog/index.html"
+                  >Blog</a
+                >
               </li>
               <li class="footer-list-item">
                 <a class="footer-link section-text" href="#">Design Services</a>
@@ -456,7 +464,11 @@
             <h3 class="footer-title section-text">Customer Information</h3>
             <ul class="footer-list">
               <li class="footer-list-item">
-                <a class="footer-link section-text" href="#">Contact Us</a>
+                <a
+                  class="footer-link section-text"
+                  href="/pages/contact-us/index.html"
+                  >Contact Us</a
+                >
               </li>
               <li class="footer-list-item">
                 <a class="footer-link section-text" href="#">Sale Exclusions</a>
@@ -571,83 +583,128 @@
           </section>
         </div>
         <div class="footer-credits">
-          <div class="rating">
+          <div class="company-rating">
             <p class="rating-text section-text">Company Rating</p>
             <ul class="stars">
               <li class="stars-item">
-                <svg
-                  class="star-img"
-                  width="14"
-                  height="13"
-                  viewBox="0 0 14 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                    fill="white"
-                  />
-                </svg>
+                <input
+                  class="rating-star"
+                  id="star-1"
+                  type="radio"
+                  name="rating"
+                  value="1"
+                />
+                <label for="star-1">
+                  <svg
+                    class="star-img"
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                      fill="white"
+                    />
+                  </svg>
+                </label>
               </li>
               <li class="stars-item">
-                <svg
-                  class="star-img"
-                  width="14"
-                  height="13"
-                  viewBox="0 0 14 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                    fill="white"
-                  />
-                </svg>
+                <input
+                  class="rating-star"
+                  id="star-2"
+                  type="radio"
+                  name="rating"
+                  value="2"
+                />
+                <label for="star-2">
+                  <svg
+                    class="star-img"
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                      fill="white"
+                    />
+                  </svg>
+                </label>
               </li>
               <li class="stars-item">
-                <svg
-                  class="star-img"
-                  width="14"
-                  height="13"
-                  viewBox="0 0 14 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                    fill="white"
-                  />
-                </svg>
+                <input
+                  class="rating-star"
+                  id="star-3"
+                  type="radio"
+                  name="rating"
+                  value="3"
+                />
+                <label for="star-3">
+                  <svg
+                    class="star-img"
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                      fill="white"
+                    />
+                  </svg>
+                </label>
               </li>
               <li class="stars-item">
-                <svg
-                  class="star-img"
-                  width="14"
-                  height="13"
-                  viewBox="0 0 14 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                    fill="white"
-                  />
-                </svg>
+                <input
+                  class="rating-star"
+                  id="star-4"
+                  type="radio"
+                  name="rating"
+                  value="4"
+                />
+                <label for="star-4">
+                  <svg
+                    class="star-img"
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                      fill="white"
+                    />
+                  </svg>
+                </label>
               </li>
               <li class="stars-item">
-                <svg
-                  class="star-img"
-                  width="14"
-                  height="13"
-                  viewBox="0 0 14 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                    fill="white"
-                  />
-                </svg>
+                <input
+                  class="rating-star"
+                  id="star-5"
+                  type="radio"
+                  name="rating"
+                  value="5"
+                />
+                <label for="star-5">
+                  <svg
+                    class="star-img"
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                      fill="white"
+                    />
+                  </svg>
+                </label>
               </li>
             </ul>
           </div>

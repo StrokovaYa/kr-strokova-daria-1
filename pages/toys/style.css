@@ -1,5 +1,10 @@
 /* "Filters" */
 
+.toys-title-breadcrumbs {
+  margin-top: 58px;
+  margin-bottom: 49px;
+}
+
 .filters {
   background-color: rgba(125, 151, 218, 0.2);
 }
@@ -64,6 +69,7 @@
   border-radius: 50%;
 }
 
+.form-range:hover,
 .form-range:focus {
   background-color: #c29974;
 }

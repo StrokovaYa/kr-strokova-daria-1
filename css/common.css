@@ -61,8 +61,11 @@ label {
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #c29974;
+
+  outline: none;
 }
 
 .button:active {
@@ -122,13 +125,18 @@ label {
   margin-right: 60px;
 }
 
-.logo-link:hover {
+.logo-link:hover,
+.logo-link:focus {
   color: #1e0606;
+
   opacity: 0.5;
+
+  outline: none;
 }
 
 .logo-link:active {
   color: #1e0606;
+
   opacity: 0.2;
 }
 
@@ -141,13 +149,18 @@ label {
   color: #1e0606;
 }
 
-.header-nav-link:hover {
+.header-nav-link:hover,
+.header-nav-link:focus {
   color: #1e0606;
+
   opacity: 0.5;
+
+  outline: none;
 }
 
 .header-nav-link:active {
   color: #1e0606;
+
   opacity: 0.2;
 }
 
@@ -169,21 +182,25 @@ label {
   margin-right: 23px;
 
   border: none;
+
   background: none;
 
   cursor: pointer;
 }
 
-.search-form-button:hover {
+.search-form-button:hover,
+.search-form-button:focus {
   color: #1e0606;
+
   opacity: 0.5;
+
+  outline: none;
 }
 
 .search-form-button:active {
   color: #1e0606;
-  opacity: 0.2;
 
-  border-color: #ffffff;
+  opacity: 0.2;
 }
 
 .contact {
@@ -195,8 +212,7 @@ label {
 /* Breadcrumbs */
 
 .title-breadcrumbs {
-  margin-top: 61px;
-  margin-bottom: 46px;
+  margin: 59px -10px 47px;
 }
 
 .breadcrumbs {
@@ -215,8 +231,19 @@ label {
   color: #1e0606;
 }
 
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus {
+  opacity: 0.7;
+
+  outline: none;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
 .breadcrumbs-delimiter {
-  margin: 0 20px 0 20px;
+  margin: 0 18px;
 }
 
 .breadcrumbs-active {
@@ -251,17 +278,24 @@ label {
 
 .switch {
   border: none;
+
   background-color: transparent;
 
   cursor: pointer;
 }
 
-.switch:hover path {
+.switch:hover path,
+.switch:focus path {
   stroke: #c29974;
+}
+
+.switch:focus {
+  outline: none;
 }
 
 .switch:active path {
   stroke: #c29974;
+
   opacity: 0.5;
 }
 
@@ -279,8 +313,11 @@ label {
   color: #c29974;
 }
 
-.page-link:hover {
+.page-link:hover,
+.page-link:focus {
   opacity: 0.5;
+
+  outline: none;
 }
 
 .page-link:active {
@@ -325,16 +362,19 @@ label {
   margin-bottom: 15px;
 }
 
-.footer-list-item:hover {
+.footer-link:hover,
+.footer-link:focus {
   opacity: 0.5;
 }
 
-.footer-list-item:active {
+.footer-link:active {
   opacity: 0.2;
 }
 
 .footer-link {
   color: #ffffff;
+
+  outline: none;
 }
 
 .join-form {
@@ -359,6 +399,11 @@ label {
   color: #ebebeb;
 }
 
+.join-form-input:hover,
+.join-form-input:focus {
+  border: 1px solid #fffdfd;
+}
+
 .footer-socials {
   margin: 0;
   display: flex;
@@ -369,35 +414,41 @@ label {
   height: 30px;
 
   margin-right: 10px;
-
-  background-color: #666666;
-  border-radius: 15px;
-}
-
-.socials-item:hover {
-  background-color: #545454;
-}
-
-.socials-item:hover path {
-  fill: #a1a1a1;
-}
-
-.socials-item:active {
-  background-color: #4a4a4a;
-}
-
-.socials-item:active path {
-  fill: #696969;
 }
 
 .socials-link {
+  display: flex;
+
   width: 100%;
   height: 100%;
-  display: flex;
+
+  background-color: #666666;
+
+  border-radius: 15px;
+
+  outline: none;
 }
 
-.socials-pin {
+.socials-link .socials-pin {
   margin: auto;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: #545454;
+}
+
+.socials-link:hover path,
+.socials-link:focus path {
+  fill: #a1a1a1;
+}
+
+.socials-link:active {
+  background-color: #4a4a4a;
+}
+
+.socials-link:active path {
+  fill: #696969;
 }
 
 .footer-credits {
@@ -425,10 +476,6 @@ label {
   color: #ffffff;
 }
 
-.company-rating:hover .rating-text {
-  color: #836e5b;
-}
-
 .stars {
   display: flex;
 
@@ -439,8 +486,16 @@ label {
   margin-right: 6px;
 }
 
+.rating-star {
+  display: none;
+}
+
 .company-rating:hover .rating-text {
   color: #836e5b;
+}
+
+.company-rating:active .rating-text {
+  color: #c29974;
 }
 
 .company-rating:hover .stars-item path {
@@ -451,9 +506,10 @@ label {
   fill: #ffffff;
 }
 
-.stars-item:active ~ .stars-item path {
-  fill: #ffffff;
+.company-rating .rating-star:checked + .rating-label path {
+  fill: #c29974;
 }
+
 .copyright-text {
   width: 380px;
 
@@ -472,9 +528,13 @@ label {
   cursor: pointer;
 }
 
-.design-text:hover {
+.design-text:hover,
+.design-text:focus {
   color: #ffffff;
+
   text-decoration: underline;
+
+  outline: none;
 }
 
 /* Contact Form / Modal Window*/
@@ -587,6 +647,7 @@ label {
 .input-text:focus,
 .input-text:hover {
   border: 1px solid rgba(0, 0, 0, 0.3);
+
   outline: none;
 }
 

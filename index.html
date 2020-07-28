@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/fonts.css" />
-    <link rel="stylesheet" href="/normalize.css" />
-    <link rel="stylesheet" href="/common.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/css/fonts.min.css" />
+    <link rel="stylesheet" href="/css/normalize.min.css" />
+    <link rel="stylesheet" href="/css/common.min.css" />
+    <link rel="stylesheet" href="./style.min.css" />
     <title>Design Life Kids</title>
   </head>
   <body>
@@ -206,8 +206,8 @@
         <img
           class="delivery-img"
           src="/images/woman.jpg"
-          width="480px"
-          height="559px"
+          width="480"
+          height="559"
           alt="woman"
         />
         <div class="delivery-block">
@@ -223,12 +223,12 @@
               <button class="delivery-item-button">Credit</button>
             </li>
           </ul>
-          <p class="delivery-text section-text p1">
+          <p class="delivery-text section-text first">
             Some days i feel like i've been working on dlk my entire life and
             there are other days that i am completely shocked that four years
             have flown by. It's simply magical.
           </p>
-          <p class="delivery-text section-text p2">
+          <p class="delivery-text section-text second">
             What started as an outlet to deal with the traumatic loss of my
             husband, dlk has now become a truly happy place for me and i have
             you and all of the beautiful designers that we work with to thank!
@@ -239,8 +239,8 @@
       <section class="partners container">
         <h2 class="hidden section-title">Partners</h2>
         <ul class="partners-list">
-          <li>
-            <a href="#">
+          <li class="partners-item">
+            <a class="partners-link" href="#">
               <img
                 src="/images/mailrugroup.png"
                 width="193"
@@ -249,18 +249,18 @@
               />
             </a>
           </li>
-          <li>
-            <a href="#"
+          <li class="partners-item">
+            <a class="partners-link" href="#"
               ><img src="/images/apple.png" width="179" height="61" alt="Apple"
             /></a>
           </li>
-          <li>
-            <a href="#"
+          <li class="partners-item">
+            <a class="partners-link" href="#"
               ><img src="/images/eltex.png" width="216" height="46" alt="Eltex"
             /></a>
           </li>
-          <li>
-            <a href="#"
+          <li class="partners-item">
+            <a class="partners-link" href="#"
               ><img src="/images/owox.png" width="211" height="40" alt="OWOX"
             /></a>
           </li>
@@ -300,7 +300,11 @@
                 <a class="footer-link section-text" href="#">About Us</a>
               </li>
               <li class="footer-list-item">
-                <a class="footer-link section-text" href="#">Blog</a>
+                <a
+                  class="footer-link section-text"
+                  href="/pages/blog/index.html"
+                  >Blog</a
+                >
               </li>
               <li class="footer-list-item">
                 <a class="footer-link section-text" href="#">Design Services</a>
@@ -324,7 +328,11 @@
             <h3 class="footer-title section-text">Customer Information</h3>
             <ul class="footer-list">
               <li class="footer-list-item">
-                <a class="footer-link section-text" href="#">Contact Us</a>
+                <a
+                  class="footer-link section-text"
+                  href="/pages/contact-us/index.html"
+                  >Contact Us</a
+                >
               </li>
               <li class="footer-list-item">
                 <a class="footer-link section-text" href="#">Sale Exclusions</a>
@@ -443,79 +451,124 @@
             <p class="rating-text section-text">Company Rating</p>
             <ul class="stars">
               <li class="stars-item">
-                <svg
-                  class="star-img"
-                  width="14"
-                  height="13"
-                  viewBox="0 0 14 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                    fill="white"
-                  />
-                </svg>
+                <input
+                  class="rating-star"
+                  id="star-1"
+                  type="radio"
+                  name="rating"
+                  value="1"
+                />
+                <label class="rating-label" for="star-1">
+                  <svg
+                    class="star-img"
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                      fill="white"
+                    />
+                  </svg>
+                </label>
               </li>
               <li class="stars-item">
-                <svg
-                  class="star-img"
-                  width="14"
-                  height="13"
-                  viewBox="0 0 14 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                    fill="white"
-                  />
-                </svg>
+                <input
+                  class="rating-star"
+                  id="star-2"
+                  type="radio"
+                  name="rating"
+                  value="2"
+                />
+                <label class="rating-label" for="star-2">
+                  <svg
+                    class="star-img"
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                      fill="white"
+                    />
+                  </svg>
+                </label>
               </li>
               <li class="stars-item">
-                <svg
-                  class="star-img"
-                  width="14"
-                  height="13"
-                  viewBox="0 0 14 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                    fill="white"
-                  />
-                </svg>
+                <input
+                  class="rating-star"
+                  id="star-3"
+                  type="radio"
+                  name="rating"
+                  value="3"
+                />
+                <label class="rating-label" for="star-3">
+                  <svg
+                    class="star-img"
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                      fill="white"
+                    />
+                  </svg>
+                </label>
               </li>
               <li class="stars-item">
-                <svg
-                  class="star-img"
-                  width="14"
-                  height="13"
-                  viewBox="0 0 14 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                    fill="white"
-                  />
-                </svg>
+                <input
+                  class="rating-star"
+                  id="star-4"
+                  type="radio"
+                  name="rating"
+                  value="4"
+                />
+                <label class="rating-label" for="star-4">
+                  <svg
+                    class="star-img"
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                      fill="white"
+                    />
+                  </svg>
+                </label>
               </li>
               <li class="stars-item">
-                <svg
-                  class="star-img"
-                  width="14"
-                  height="13"
-                  viewBox="0 0 14 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                    fill="white"
-                  />
-                </svg>
+                <input
+                  class="rating-star"
+                  id="star-5"
+                  type="radio"
+                  name="rating"
+                  value="5"
+                />
+                <label class="rating-label" for="star-5">
+                  <svg
+                    class="star-img"
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
+                      fill="white"
+                    />
+                  </svg>
+                </label>
               </li>
             </ul>
           </div>
@@ -563,10 +616,11 @@
         </label>
         <label class="form-label">
           <input
-            class="consent-input hidden"
+            class="consent-input consent-input_js hidden"
             type="checkbox"
             name="consent"
             value="yes"
+            autocomplete="off"
           />
           <span class="consent-input-checkbox"></span>
           <span class="consent-input-text"
@@ -574,7 +628,13 @@
             personal data</span
           >
         </label>
-        <button class="button button-form" type="submit" disabled>
+        <button
+          class="button button-form submit_js"
+          type="submit"
+          name="submit"
+          value="yes"
+          disabled
+        >
           SUBMIT
         </button>
         <button
@@ -597,6 +657,6 @@
         </button>
       </form>
     </div>
-    <script src="main.js"></script>
+    <script src="/js/main.min.js"></script>
   </body>
 </html>

@@ -54,8 +54,11 @@
   background-color: rgba(30, 6, 6, 0.6);
 }
 
-.rectangle-button:hover {
+.rectangle-button:hover,
+.rectangle-button:focus {
   background-color: #725f5b;
+
+  outline: none;
 }
 
 .slider-block {
@@ -147,14 +150,18 @@
   background-color: rgba(9, 3, 79, 0.17);
 }
 
-.categories-list:hover .img-title {
+.category-link:hover .img-title,
+.category-link:focus .img-title {
   text-decoration: underline;
 }
 
 .category-link {
+  display: flex;
+
   width: 100%;
   height: 100%;
-  display: flex;
+
+  outline: none;
 }
 
 .category-img {
@@ -184,15 +191,29 @@
 .categories-switch {
   display: flex;
   align-items: center;
+
   margin-top: 10px;
 }
+
 .vector {
   width: 37px;
   height: 37px;
+
   margin-right: 6px;
 
-  border: none;
   background-color: rgba(112, 187, 220, 0.2);
+
+  border: none;
+  outline: none;
+}
+
+.vector:hover,
+.vector:focus {
+  opacity: 0.7;
+}
+
+.vector:active {
+  opacity: 0.3;
 }
 
 .categories-text {
@@ -229,6 +250,7 @@
 
 .delivery-item-button {
   font-family: "Crimson Text", "Times New Roman", serif;
+  font-weight: normal;
   font-size: 26px;
   line-height: 32px;
 
@@ -241,15 +263,27 @@
   padding: 14px 180px 11px 60px;
 
   border: none;
+
   color: #1e0606;
   background-color: transparent;
 
   cursor: pointer;
 }
 
+.delivery-item-button:hover,
+.delivery-item-button:focus {
+  font-family: "Crimson Text", "Times New Roman", serif;
+  font-weight: 700;
+
+  background-color: rgba(112, 187, 220, 0.2);
+
+  outline: none;
+}
+
 .delivery-item-button.active {
   font-family: "Crimson Text", "Times New Roman", serif;
   font-weight: 700;
+
   background-color: rgba(112, 187, 220, 0.2);
 }
 
@@ -258,12 +292,12 @@
   padding-left: 60px;
 }
 
-.delivery-text.p1 {
+.delivery-text.first {
   margin-top: 19px;
   margin-bottom: 15px;
 }
 
-.delivery-text.p2 {
+.delivery-text.second {
   margin-bottom: 26px;
 }
 
@@ -282,7 +316,21 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+}
+
+.partners-link {
+  display: block;
+
+  outline: none;
+}
+
+.partners-link:hover,
+.partners-link:focus {
+  opacity: 0.7;
+}
+
+.partners-item:active {
+  opacity: 0.3;
 }
 
 /* DLK and Map */
@@ -309,6 +357,7 @@
 
 .about {
   font-family: "Crimson Text", "Times New Roman", serif;
+  font-weight: normal;
   font-size: 26px;
   line-height: 32px;
 
